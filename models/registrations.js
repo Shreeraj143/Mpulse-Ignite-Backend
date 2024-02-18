@@ -26,6 +26,7 @@ const registrationsSchema = new Schema({
   },
   payment_id: {
     type: String,
+    unique: true,
   },
   team_members: {
     type: Array,
