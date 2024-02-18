@@ -54,7 +54,6 @@ export async function storeRegistrations(req, res) {
 
 export async function deleteRegistrations(req, res) {
   try {
-    const { email } = req.body;
     await Registrations.deleteMany();
   } catch (error) {
     res.json(error);

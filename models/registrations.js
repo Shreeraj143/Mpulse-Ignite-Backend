@@ -38,7 +38,6 @@ const registrationsSchema = new Schema({
   is_team_event: Boolean,
   payment_screenshot: {
     type: String,
-    unique: true,
   },
 });
 
