@@ -21,13 +21,13 @@ const port = process.env.PORT || 8080;
 /** routes */
 app.use("/api", router); /** apis */
 
-app.get("/hello", (req, res) => {
-  try {
-    res.json("Get Request");
-  } catch (error) {
-    res.json(error);
-  }
-});
+// app.get("/hello", (req, res) => {
+//   try {
+//     res.json("Get Request");
+//   } catch (error) {
+//     res.json(error);
+//   }
+// });
 
 /** start server only when we have valid connection */
 connect()
